@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const Main = () => {
   return (
-    <div className="text-white">
+    <div className="text-white p-7">
       <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
         <p className="text-textColor font-bold p-2">
           WELCOME TO THE CRYPTO API DOCUMENTATION
@@ -24,7 +24,6 @@ const Main = () => {
             speed={2}
             cursor={true}
             repeat={Infinity}
-
           />
         </div>
         <p className="md:text-2xl text-xl font-bold text-gray-400">

@@ -7,7 +7,7 @@ const Header = () => {
     setOpen(!open);
   };
   return (
-    <nav className="w-full  bg-white z-100 sticky ">
+    <nav className="w-full bg-white z-100 sticky ">
       <div className="flex navbar justify-between items-center h-20 max-w-[1240px]  mx-auto px-4 text-white">
         <a href="/">
           <h1 className="font-extrabold w-full text-3xl  text-[#3b3d3d]">
@@ -54,7 +54,22 @@ const Header = () => {
           {open ? (
             <span className="text-4xl">&times;</span>
           ) : (
-            <span className="text-4xl">🏳️‍⚧️</span>
+            <span className="w-20 p-8">
+              <svg
+                fill="#000300"
+                clip-rule="evenodd"
+                fill-rule="evenodd"
+                stroke-linejoin="round"
+                stroke-miterlimit="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m13 16.745c0-.414-.336-.75-.75-.75h-9.5c-.414 0-.75.336-.75.75s.336.75.75.75h9.5c.414 0 .75-.336.75-.75zm9-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm-4-5c0-.414-.336-.75-.75-.75h-14.5c-.414 0-.75.336-.75.75s.336.75.75.75h14.5c.414 0 .75-.336.75-.75z"
+                  fill-rule="nonzero"
+                />
+              </svg>
+            </span>
           )}
         </div>
         <ul

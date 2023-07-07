@@ -7,7 +7,6 @@ const ApiExample = () => {
 
   const fetchData = () => {
     setIsLoading(true);
-
     setTimeout(() => {
       const data = {
         id: 1,
@@ -16,10 +15,9 @@ const ApiExample = () => {
         Image_Url: "https://i.postimg.cc/FKCBDVDz/0xbtc.png",
         label: "0XBTC",
       };
-
       setObjectData(data);
       setIsLoading(false);
-    }, 1000); // 1-second delay
+    }, 1000);
   };
 
   return (
@@ -33,8 +31,8 @@ const ApiExample = () => {
         </div>
         <div className="my-4">
           <div className="flex flex-wrap sm:flex-row items-center justify-between w-full">
-            <pre className=" p-4 flex w-full bg-gray-200 rounded-md text-black">
-              <code className=" p-5">
+            <pre className="p-6 overflow-y-auto bg-gray-300 w-full rounded-md text-black">
+              <code className="p-5">
                 {`fetch('https://sore-gold-chimpanzee-yoke.cyclic.app/crypto/api/id/1')
             .then(res=>res.json())
             .then(json=>console.log(json))
@@ -58,10 +56,8 @@ const ApiExample = () => {
             objectData !== null && (
               <div>
                 <h3 className="p-2">Object Data:</h3>
-                <pre className="px-10 py-4 h-[200px] w-full overflow-x-auto overflow-y-hidden rounded-md bg-gray-200  text-black">
-                  <code >
-                    {JSON.stringify(objectData, null, 2)}
-                  </code>
+                <pre className="px-10 py-4 h-[200px] w-full overflow-y-auto rounded-md bg-gray-200  text-black">
+                  <code>{JSON.stringify(objectData, null, 2)}</code>
                 </pre>
               </div>
             )

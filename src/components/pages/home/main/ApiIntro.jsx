@@ -11,7 +11,7 @@ const ApiIntro = () => {
           src={Intro}
           alt="/"
         />
-        <div className="flex flex-wrap justify-center mx-auto">
+        <div className="flex flex-wrap justify-start mx-auto">
           <h1 className="text-gray-600  md:text-4xl sm:text-3xl text-2xl font-bold py-2">
             Looking for cryptocurrency data? Try our Crypto API!
           </h1>
@@ -23,12 +23,12 @@ const ApiIntro = () => {
             conducting research, or developing a trading platform, our API
             provides fast and reliable data to meet your needs.
           </p>
-          <div className="flex  gap-2">
+          <div className="flex flex-wrap gap-6  items-start">
             <Link
               to={"https://github.com/Mansi-Tiwari/cryptoapi"}
               target="_blank"
             >
-              <button className="flex items-center justify-center  bg-black text-white w-[200px] rounded-md font-medium my-6 mx-auto md:mx-0 py-3">
+              <button className="flex items-center justify-center  bg-black text-white px-2 rounded-md font-medium my-2 mx-auto md:mx-0 py-3">
                 View on GitHub &nbsp;
                 <span>
                   <svg
@@ -44,7 +44,7 @@ const ApiIntro = () => {
               </button>
             </Link>
             <NavLink to={"/docs"}>
-              <button className="bg-black flex items-center justify-center  text-white w-[200px] rounded-md font-medium my-6 mx-auto md:mx-0 py-3">
+              <button className="flex items-center justify-center  bg-black text-white px-2 rounded-md font-medium my-2 mx-auto md:mx-0 py-3">
                 Read Docs &nbsp;
                 <span className="w-5">
                   <svg
