@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Typed from "react-typed";
+import { TypeAnimation } from "react-type-animation";
 
 const Main = () => {
   return (
@@ -16,12 +16,15 @@ const Main = () => {
           <p className="md:text-4xl sm:text-4xl text-xl font-bold py-4">
             Fast and Reliable Data for
           </p>
-          <Typed
+
+          <TypeAnimation
             className="md:text-4xl sm:text-4xl text-xl font-bold md:pl-4 pl-2"
-            strings={["Bitcoin", "Ethereum", "Dogecoin"]}
-            typeSpeed={120}
-            backSpeed={140}
-            loop
+            sequence={["Bitcoin",3000, "Ethereum",3000, "Dogecoin",3000]}
+            wrapper="span"
+            speed={2}
+            cursor={true}
+            repeat={Infinity}
+
           />
         </div>
         <p className="md:text-2xl text-xl font-bold text-gray-400">
