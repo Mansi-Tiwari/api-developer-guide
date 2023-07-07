@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .headerList {
+    @apply uppercase  hover:text-textColor  text-gray-700  p-4;
+  }
+  .sidebarNav {
+    @apply bg-[#111111] overflow-hidden top-20 left-0 md:h-[78vh]  w-64 max-h-full transition-transform -translate-x-full overflow-y-scroll  md:translate-x-0  border-r-2 border-gray-300;
+  }
+  .sidebarList {
+    @apply flex items-center w-full py-2 transition duration-75 rounded-lg pl-11  hover:text-gray-200 text-gray-300;
+  }
+  .sidebarNav .active {
+    @apply text-teal-400 border-emerald-50 border-b;
+  }
+  .navbar .active {
+    @apply text-teal-400 border-teal-400 border-b font-bold;
+  }
+}
