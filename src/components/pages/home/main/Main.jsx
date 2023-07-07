@@ -6,7 +6,7 @@ const Main = () => {
   return (
     <div className="text-white">
       <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
-        <p className="text-[#00df9a] font-bold p-2">
+        <p className="text-textColor font-bold p-2">
           WELCOME TO THE CRYPTO API DOCUMENTATION
         </p>
         <h1 className="md:text-6xl sm:text-6xl text-4xl font-bold md:py-6">
