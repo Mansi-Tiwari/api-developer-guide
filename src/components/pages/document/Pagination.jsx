@@ -19,7 +19,7 @@ const Pagination = () => {
               You can fetch cryptocurrency data with pagination using the
               following API endpoint:
             </p>
-            <pre className="p-6 bg-gray-300 w-full rounded-md text-black">
+            <pre className="p-6 overflow-y-auto bg-gray-300 w-full rounded-md text-black">
               <code> {`GET /crypto/api?limit={limit}&page={page}`}</code>
             </pre>
             <p className="text-lg  mt-4">Example Request:</p>

@@ -2,8 +2,8 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className=" py-40 h-[76vh] text-gray-200">
-      <div className="max-w-[800px] mx-auto text-center">
+    <div className=" py-40 min-h-[100%] md:h-[76vh] text-gray-200">
+      <div className="md:max-w-[800px]  mx-auto text-center">
         <h2 className="text-3xl font-bold mb-4 text-textColor">
           About Our Crypto API
         </h2>

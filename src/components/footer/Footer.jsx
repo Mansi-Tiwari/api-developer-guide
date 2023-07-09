@@ -3,12 +3,10 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="flex font-normal items-center justify-center ">
-      Made with ❤️ by &nbsp;
+    <div className="flex font-normal items-center justify-center p-3">
       <Link to={"https://github.com/Mansi-Tiwari"} target="_blank">
-        Mansi Tiwari
+        Made with ❤️ by Mansi Tiwari 😊
       </Link>
-      😊
     </div>
   );
 };

@@ -7,8 +7,8 @@ const ApiRoutes = () => {
       <div className="max-w-[1040px] mx-auto px-2 ">
         <h1 className="text-2xl font-bold "> Routes</h1>
         <p className="py-4 text-gray-500">All HTTP methods are supported</p>
-        <table className="table-auto text-lg">
-          <tbody className="">
+        <table className="table-auto text-lg overflow-y-auto">
+          <tbody>
             <tr>
               <td className="pr-[4rem] md:pr-[20rem]">Get</td>
               <td className="hover:text-textColor text-blue-500">
@@ -24,7 +24,7 @@ const ApiRoutes = () => {
             <tr>
               <td>Get</td>
               <td className="hover:text-textColor text-blue-500 ">
-                <NavLink to={"/name"}>/crypto/api/name/bitcoin</NavLink>
+                <NavLink to={"/name"}>/crypto/api/name/Aur</NavLink>
               </td>
             </tr>
             <tr>

@@ -21,79 +21,79 @@ const ApiError = () => {
               <h3 className="text-xl font-bold mt-6">Other API Errors</h3>
               <p className="text-lg mt-2">
                 In addition to rate limit errors, other API errors may occur
-                during data retrieval.
               </p>
-              <table className="table-auto max-w-[800px]  mt-3 border  border-gray-600  text-left text-gray-200 ">
-                <thead className=" font-bold text-gray-300 uppercase  bg-[#0a0000b7] ">
-                  <tr>
-                    <td className="p-3 border-r border-gray-500 ">
-                      Status code
-                    </td>
-                    <td className="p-3">Description</td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="p-4 bg-gray-600 border-r border-gray-500">
-                      400 (Bad Request)
-                    </td>
-                    <td className="p-4">
-                      This is due to an invalid request and the server could not
-                      process the user's request.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="p-4 bg-gray-600 border-r border-gray-500">
-                      401 (Unauthorised)
-                    </td>
-                    <td className="p-4">
-                      This is due to the lack of valid authentication
-                      credentials for the requested resource by the user.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="p-4 bg-gray-600 border-r border-gray-500">
-                      429 (Too many requests)
-                    </td>
-                    <td className="p-4">
-                      This is likely indicating that the rate limit has reached.
-                      The user should reduce the number of calls made, or
-                      consider scaling their service plan that has much higher
-                      rate limits and call credits.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="p-4 bg-gray-600 border-r border-gray-500">
-                      500 (Internal Server Error)
-                    </td>
-                    <td className="p-4">
-                      This is a generic error response indicating that the
-                      server has encountered an unexpected issue that prevented
-                      it from fulfilling the request.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="p-4 bg-gray-600 border-r border-gray-500">
-                      CORS error
-                    </td>
-                    <td className="p-4">
-                      A CORS error occurs when the server doesn't return the
-                      CORS headers required. You may learn more and attempt the
-                      recommended solutions{" "}
-                      <Link
-                        to={
-                          "https://www.bannerbear.com/blog/what-is-a-cors-error-and-how-to-fix-it-3-ways/#how-to-fix-a-cors-error"
-                        }
-                        target="_blank"
-                        className="text-blue-500"
-                      >
-                        here.
-                      </Link>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-
+              <div className="overflow-x-auto ">
+                <table className=" max-w-[800px]  mt-3 border  border-gray-600  text-left text-gray-200 ">
+                  <thead className="overflow-y-auto  font-bold text-gray-300 uppercase  bg-[#0a0000b7] ">
+                    <tr>
+                      <td className="p-3 border-r border-gray-500 ">
+                        Status code
+                      </td>
+                      <td className="p-3">Description</td>
+                    </tr>
+                  </thead>
+                  <tbody className="overflow-y-auto">
+                    <tr>
+                      <td className="p-4 bg-gray-600 border-r border-gray-500">
+                        400 (Bad Request)
+                      </td>
+                      <td className="p-4 overflow-y-auto">
+                        This is due to an invalid request and the server could
+                        not process the user's request.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="p-4 bg-gray-600 border-r border-gray-500">
+                        401 (Unauthorised)
+                      </td>
+                      <td className="p-4">
+                        This is due to the lack of valid authentication
+                        credentials for the requested resource by the user.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="p-4 bg-gray-600 border-r border-gray-500">
+                        429 (Too many requests)
+                      </td>
+                      <td className="p-4">
+                        This is likely indicating that the rate limit has
+                        reached. The user should reduce the number of calls
+                        made, or consider scaling their service plan that has
+                        much higher rate limits and call credits.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="p-4 bg-gray-600 border-r border-gray-500">
+                        500 (Internal Server Error)
+                      </td>
+                      <td className="p-4">
+                        This is a generic error response indicating that the
+                        server has encountered an unexpected issue that
+                        prevented it from fulfilling the request.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="p-4 bg-gray-600 border-r border-gray-500">
+                        CORS error
+                      </td>
+                      <td className="p-4">
+                        A CORS error occurs when the server doesn't return the
+                        CORS headers required. You may learn more and attempt
+                        the recommended solutions{" "}
+                        <Link
+                          to={
+                            "https://www.bannerbear.com/blog/what-is-a-cors-error-and-how-to-fix-it-3-ways/#how-to-fix-a-cors-error"
+                          }
+                          target="_blank"
+                          className="text-blue-500"
+                        >
+                          here.
+                        </Link>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
               <h3 className="text-xl font-bold mt-6">
                 <Emoji symbol="📈" label="limit" /> Rate Limit Error
               </h3>

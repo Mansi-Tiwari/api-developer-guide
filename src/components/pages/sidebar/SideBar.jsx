@@ -31,12 +31,12 @@ const SideBar = () => {
       </button>
       <aside
         className={
-          open ? "sidebarNav absolute  " : "sidebarNav absolute  translate-x-0"
+          open ? "sidebarNav absolute" : "sidebarNav absolute  translate-x-0"
         }
         aria-label="Sidebar"
       >
         <div className="h-full px-3  text-gray-300">
-          <div className="font-titleFont  pl-2 py-6 mb-3 border-b-2 border-gray-300 font-bold text-2xl">
+          <div className="font-titleFont  pl-2 py-6 mb-3 border-b border-gray-800 font-bold text-2xl">
             <Emoji symbol="📘" label="docs" />
             Docs
           </div>
@@ -97,7 +97,7 @@ const SideBar = () => {
             </li>
             <li
               onClick={handleChange}
-              className=" sidebarList  py-1  space-y-1"
+              className=" sidebarList py-1 space-y-1"
             >
               <NavLink to="/error">
                 <Emoji symbol="⚠️" label="error" /> Errors & Rate Limit

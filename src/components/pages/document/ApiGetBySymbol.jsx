@@ -21,7 +21,7 @@ const ApiGetBySymbol = () => {
                 You can fetch cryptocurrency data by symbol using the following
                 API endpoint:
               </p>
-              <pre className="p-6 bg-gray-300 w-full rounded-md text-black">
+              <pre className="p-6 overflow-y-auto bg-gray-300 w-full rounded-md text-black">
                 <code>{`GET /crypto/api/symbol/{symbol}`}</code>
               </pre>
               <p className="text-lg  mt-4">Example Request:</p>
