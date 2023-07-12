@@ -42,4 +42,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For any inquiries or support, please contact [your contact email or other relevant contact information].
+For any inquiries or support, please contact **mansit8788@gamil.com**
