@@ -26,8 +26,8 @@ This repository contains the source code and assets for the API documentation we
 
 1. Clone the repository to your local machine.
 2. Install the required dependencies using `npm install`.
-3. Start the development server using `npm start`.
-4. Access the website at `http://localhost:3000` in your browser.
+3. Start the development server using `npm run dev`.
+4. Access the website at `http://127.0.0.1:5173/` in your browser.
 
 ## Usage
 
